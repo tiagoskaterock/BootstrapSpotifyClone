@@ -1,5 +1,5 @@
 /* body */
-html, body, .capa{ height: 100%; }
+html, body, .capa{ height: 100%; overflow: auto;}
 
 body{
     background: url(img/capa.png),
@@ -41,8 +41,10 @@ nav.navbar-transparente{ padding: 15px 0px; background: rgba(0, 0, 0, .6); borde
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
-    padding: 10px 35px;
-    margin: 0px 15px;
+    /*
+        padding: 10px 35px;
+        margin: 10px 15px;
+    */
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
 }
@@ -76,7 +78,37 @@ footer{ background: black; padding: 50px 0px 20px 0px; position: relative; }
 .item-rede-social{ float: right; }
 
 /* =============== Tipografia =========== */
-h1{ font-size: 100px; font-weight: 900; letter-spacing: -0.05em; margin-bottom: 50px; }
+h1{ 
+    /* font-size: 100px; */
+    font-weight: 900; 
+    letter-spacing: -0.05em; 
+    margin-bottom: 50px; 
+}
+
+/* Media queries */
+/* ulra small tela< 320 px
+
+/* xs */
+@media screen and (max-width: 767px){
+    h1{ font-size: 50px; }
+    .btn-custom{ margin: 10px 15px; }
+}
+
+/* sm */
+@media screen and (min-width: 768px){
+    h1{ font-size: 70px; }
+    .btn-custom{ margin-right: 15px; }
+}
+
+/* md */
+@media screen and (min-width: 992px){
+    h1{ font-size: 80px; }
+}
+
+/* lg */
+@media screen and (min-width: 1200px){
+    h1{ font-size: 100px; }
+}
 
 h2{ font-size: 50px; font-weight: 700; letter-spacing: -0.04em; }
 
